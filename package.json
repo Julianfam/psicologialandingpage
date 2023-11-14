@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint1": "eslint .",
     "lint:fix": "eslint src/ --fix"
   },
   "dependencies": {
