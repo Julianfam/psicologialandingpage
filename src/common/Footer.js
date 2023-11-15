@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
   // Constants for category section
@@ -101,7 +102,7 @@ const Footer = () => {
       <div className="bg-gray-100">
         <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900 cursor-pointer">
-          <img
+          <Image
               src="https://pic.onlinewebfonts.com/thumbnails/icons_478376.svg"
               alt="Icon"
               className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"

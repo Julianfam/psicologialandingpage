@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 // Array de objetos que contiene el nombre y el título de cada imagen
 const imageInfo = [
@@ -68,7 +69,7 @@ function GaleriaIntro() {
               onMouseEnter={() => handleImageHover(`image${(index + 1).toString().padStart(2, '0')}.jpg`)}
               onMouseLeave={handleImageLeave}
             >
-              <img
+              <Image
                 alt={`gallery ${index + 1}`}
                 className="w-full h-full object-cover object-center block"
                 src={getImageUrl(index)}

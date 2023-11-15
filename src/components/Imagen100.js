@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Image from 'next/image';
 
 export default function Imagen100() {
   const imageUrls = [
@@ -69,7 +70,7 @@ export default function Imagen100() {
       {imageUrls.map((imageUrl, index) => (
         <div key={index}>
           <div className="container mx-auto" style={imageContainerStyle}>
-            <img src={imageUrl} alt={`Image ${index}`} style={imageStyle} />
+            <Image src={imageUrl} alt={`Image ${index}`} style={imageStyle} />
             <div className="w-full md:w-1/2 lg:w-1/3" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
               <div className="h-full bg-gray-100 bg-opacity-75 rounded-lg overflow-hidden text-center relative">
                 <div style={{backgroundColor: 'rgba(255, 255, 255, 0.6)', borderRadius: '10px', padding: '20px', boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)' }}>
