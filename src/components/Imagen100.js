@@ -26,7 +26,7 @@ export default function Imagen100() {
       titleText: 'Mejorar la comunicacíon es clave',
       descriptionText: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat 2.',
       learnMoreText: 'Precio',
-      likesText: '$100.000',
+      likesText: '1.2K 2',
       commentsText: '6 2',
     },
     {

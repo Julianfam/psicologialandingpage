@@ -8,7 +8,7 @@ export default function Header() {
         <Link href="/" passHref>
           <div className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <img
-              src="D:\ANMA_INDUSTRIES\codeForTheWorld\psicologia\psicologialandingpage\public\assets\images\Logo_Laura-05.svg"
+              src="/public/assets/images/Logo_Laura-05.svg"
               alt="Icon"
               className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
             />
