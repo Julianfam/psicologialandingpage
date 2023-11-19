@@ -12,6 +12,8 @@ export default function Header() {
               src="/public/assets/images/Logo_Laura-05.svg"
               alt="Icon"
               className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+              width={30}
+              height={30}
             />
             <span className="ml-3 text-xl">Psicologa Laura Camila </span>
           </div>

@@ -9,8 +9,7 @@ export default function Imagen100() {
     'https://i0.wp.com/www.clinicaperezvieco.com/wp-content/uploads/2020/01/terapia-online.jpg?fit=1418%2C792&ssl=1',
     'https://institutoinfodech.com/wp-content/uploads/2022/04/terapia-online.jpg',
     'https://terapiaapsicologica.com/wp-content/uploads/2020/12/Psychologist-bro.png',
-    
-    // Agrega más URLs de imágenes según sea necesario
+    // Add more image URLs as needed
   ];
 
   const textContent = [
@@ -38,28 +37,28 @@ export default function Imagen100() {
       likesText: '$100.000',
       commentsText: '6 3',
     },
-    // Agrega más objetos de contenido de texto según sea necesario
+    // Add more text content objects as needed
   ];
 
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 500, // 1 segundo para la transición
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
 
   const imageContainerStyle = {
     width: '100%',
-    height: '100vh', // 100% de la altura de la pantalla
-    overflow: 'hidden', // Ocultar el exceso de la imagen
+    height: '100vh',
+    overflow: 'hidden',
     position: 'relative',
   };
 
   const imageStyle = {
-    width: '100%',
-    height: '100%', // 100% de la altura de su contenedor
-    objectFit: 'cover', // Recortar la imagen automáticamente
+    width: '100%', // Set the width to 100%
+    height: '100%', // Set the height to 100% of the container height
+    objectFit: 'cover',
     position: 'absolute',
     top: 0,
     left: 0,
@@ -70,10 +69,13 @@ export default function Imagen100() {
       {imageUrls.map((imageUrl, index) => (
         <div key={index}>
           <div className="container mx-auto" style={imageContainerStyle}>
-            <Image src={imageUrl} alt={`Image ${index}`} style={imageStyle} />
+            {/* Update the Image component without width and height attributes */}
+            <Image src={imageUrl} alt={`Image ${index}`} style={imageStyle}  width={1200}  // Set the actual width of the image
+              height={800}  // Set the actual height of the image
+              objectFit="cover"/>
             <div className="w-full md:w-1/2 lg:w-1/3" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
               <div className="h-full bg-gray-100 bg-opacity-75 rounded-lg overflow-hidden text-center relative">
-                <div style={{backgroundColor: 'rgba(255, 255, 255, 0.6)', borderRadius: '10px', padding: '20px', boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)' }}>
+                <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.6)', borderRadius: '10px', padding: '20px', boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)' }}>
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 responsive-text">{textContent[index].categoryText}</h2>
                   <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3 responsive-text">{textContent[index].titleText}</h1>
                   <p className="leading-relaxed mb-3 responsive-text">{textContent[index].descriptionText}</p>
